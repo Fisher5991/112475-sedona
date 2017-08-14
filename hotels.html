@@ -6,10 +6,10 @@
 	</head>
 	<body>
 		<header class="main-header">
+			<a class="main-header-logo" href="index.html">
+				<img src="img/index-logo.svg" width="150" height="100" alt="Логотип сайта «Седона»">
+			</a>
 			<nav class="main-navigation">
-				<a class="main-header-logo" href="index.html">
-					<img src="img/index-logo.svg" width="150" height="100" alt="Логотип сайта «Седона»">
-				</a>
 				<ul class="site-navigation">
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="media.html">Фото и видео</a></li>
@@ -58,12 +58,7 @@
 					</fieldset>
 					<fieldset>
 						<legend>Стоимость в сутки (р):</legend>
-						<span>От</span>
-						<output name="cost">0</output>
-						<span>До</span>
-						<output name="cost">3000</output>
-						<input class="from" type="range" min="0" max="4000" value="0">
-						<input class="to" type="range" min="0" max="4000" value="3000">
+						<div id="slider-range"></div>
 					</fieldset>
 					<button class="button select-button" type="submit">Показать</button>
 				</form>
@@ -87,8 +82,8 @@
 				</header>
 				<ul class="results-list">
 					<li class="result-item">
-						<h3>Amara Resort & SPA</h3>
-						<img src="img/preview-hotel1.svg" width="135" height="90" alt="Отель Amara Resort & SPA">
+						<h3>Amara Resort &amp; SPA</h3>
+						<img src="img/preview-hotel1.svg" width="135" height="90" alt="Отель Amara Resort &amp; SPA">
 						<span class="stars">4 звезды</span>
 						<p>
 							<span class="result-category">Гостиница</span>
