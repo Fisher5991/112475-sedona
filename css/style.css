@@ -1,0 +1,23 @@
+body {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+	font-weight: normal;
+	font-family: "PT Sans Regular", sans-serif;
+}
+
+.feature-name-image {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ffffff;
+	font-weight: normal;
+	font-family: "PT Sans Bold", sans-serif;
+}
+
+.feature-sub-name {
+	font-size: 21px;
+	line-height: 21px;
+	color: black;
+	font-weight: normal;
+	font-family: "PT Sans Bold", sans-serif;
+}
