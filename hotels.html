@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -72,32 +74,32 @@
           </div>
           <div>
             <b>Сортировка:</b>
-            <ul>
+            <ul class="sorting">
               <li>
-                <a href="#" class="sort-button current">По цене</a>
+                <a href="#" class="sorting-by current">По цене</a>
               </li>
               <li>
-                <a href="#" class="sort-button">По типу</a>
+                <a href="#" class="sorting-by">По типу</a>
               </li>
               <li>
-                <a href="#" class="sort-button">По рейтингу</a>
+                <a href="#" class="sorting-by">По рейтингу</a>
               </li>
               <li>
-                <a href="#" class="sort-button">
+                <a href="#" class="sorting-alphabet">
                   <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
                 </a>
               </li>
               <li>
-                <a href="#" class="sort-button current">
+                <a href="#" class="sorting-alphabet current">
                   <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
                 </a>
               </li>
             </ul>
           </div>
         </header>
-        <ul class="results-list">
+        <ul>
           <li class="result-item">
-            <h3>
+            <h3 class="hotel-title">
               <a href="amara-resort-spa.html">Amara Resort &amp; SPA</a>
             </h3>
             <img src="img/preview-hotel1.jpg" width="135" height="90" alt="Amara Resort &amp; SPA">
@@ -110,12 +112,12 @@
             </p>
             <p>
               <a class="button" href="amara-resort-spa.html">Подробнее</a>
-              <a class="button" href="hotel-reserve.html">Забронировать</a>
+              <a class="button reserve-button" href="hotel-reserve.html">Забронировать</a>
             </p>
-            <span>Рейтинг: 8,5</span>
+            <span class="rating">Рейтинг: 8,5</span>
           </li>
           <li class="result-item">
-            <h3>
+            <h3 class="hotel-title">
               <a href="desert-quail-inn.html">Desert Quail Inn</a>
             </h3>
             <img src="img/preview-hotel2.jpg" width="135" height="90" alt="Desert Quail Inn">
@@ -128,12 +130,12 @@
             </p>
             <p>
               <a class="button" href="desert-quail-inn.html">Подробнее</a>
-              <a class="button" href="hotel-reserve.html">Забронировать</a>
+              <a class="button reserve-button" href="hotel-reserve.html">Забронировать</a>
             </p>
-            <span>Рейтинг: 8,9</span>
+            <span class="rating">Рейтинг: 8,9</span>
           </li>
           <li class="result-item">
-            <h3>
+            <h3 class="hotel-title">
               <a href="villas-at-poco-diablo.html">Villas at poco diablo</a>
             </h3>
             <img src="img/preview-hotel3.jpg" width="135" height="90" alt="Villas at poco diablo">
@@ -146,9 +148,9 @@
             </p>
             <p>
               <a class="button" href="villas-at-poco-diablo.html">Подробнее</a>
-              <a class="button" href="hotel-reserve.html">Забронировать</a>
+              <a class="button reserve-button" href="hotel-reserve.html">Забронировать</a>
             </p>
-            <span>Рейтинг: 9,2</span>
+            <span class="rating">Рейтинг: 9,2</span>
           </li>
         </ul>
       </section>
@@ -176,7 +178,7 @@
       </div>
       <p class="footer-copyright">
         <span>Website by</span>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
         </a>
       </p>
