@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="hotels-page">
     <header class="main-header">
       <a class="main-header-logo" href="index.html">
         <img src="img/index-logo.png" width="67" height="56" alt="Седона">
@@ -69,12 +69,12 @@
       <section class="results">
         <header>
           <h2 class="visually-hidden">Результаты выборки</h2>
-          <div>
+          <div class="found">
             <b>Найдено:<span class="count"> 3</span></b>
           </div>
-          <div>
-            <b>Сортировка:</b>
-            <ul class="sorting">
+          <div class="sorting">
+            <span>Сортировка:</span>
+            <ul class="sorting-list">
               <li>
                 <a href="#" class="sorting-by current">По цене</a>
               </li>
@@ -156,7 +156,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p>#visitsedona</p>
+      <b class="footer-tag">#visitsedona</b>
       <div class="footer-social">
         <ul>
           <li>

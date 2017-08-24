@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="index">
+  <body class="index-page">
     <header class="main-header">
       <a class="main-header-logo">
         <img src="img/index-logo.png" width="67" height="56" alt="Седона">
@@ -24,15 +24,16 @@
     <main class="container">
       <h1 class="visually-hidden">Седона</h1>
       <section class="features">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <p><b>Седона — небольшой городок в Аризоне, заслуживающей большего!</b></p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h2 class="features-big-title">Седона — небольшой городок в Аризоне, заслуживающей большего!</h2>
+        <p class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features-list">
           <li class="item-list">
             <h3 class="features-title">Настоящий городок</h3>
             <img src="img/real-city.jpg" width="800" height="256" alt="Настоящий городок">
             <span>- №1 -</span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li class="item-list">
             <ul class="features-sub-list">
               <li class="item-sub-list">
                 <h4>Жилье</h4>
@@ -82,7 +83,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p>#visitsedona</p>
+      <b class="footer-tag">#visitsedona</b>
       <div class="footer-social">
         <ul>
           <li>
@@ -123,18 +124,18 @@
         </p>
         <p>
           <label for="number-adults">Взрослые:</label>
-          <button type="button">-</button>
+          <button class="change-value-button" type="button">-</button>
           <input type="number" name="number-adults" id="number-adults" value="2">
-          <button type="button">+</button>
+          <button class="change-value-button" type="button">+</button>
         </p>
         <p>
           <label for="number-children">Дети:</label>
-          <button type="button">-</button>
+          <button class="change-value-button" type="button">-</button>
           <input type="number" name="number-children" id="number-children" value="0">
-          <button type="button">+</button>
+          <button class="change-value-button" type="button">+</button>
         </p>
         <p>
-          <button class="button" type="submit" name="search">Найти</button>
+          <button class="button search-hotels-button-get" type="submit" name="search">Найти</button>
         </p>
       </form>
     </section>
