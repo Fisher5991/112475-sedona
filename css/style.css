@@ -2,12 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	color: #333333;
-	font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
   text-transform: uppercase;
-  
   background-color: #f2f2f2;
   background-repeat: no-repeat;
 }
@@ -33,14 +32,7 @@ a {
 
 .features-list {
   text-align: center;
-  
   background-color: #eeeeee;
-}
-
-.results,
-.selections,
-.search-form label {
-  text-align: left;
 }
 
 .main-header,
@@ -89,7 +81,6 @@ a.site-navigation-current {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  
   background-color: #81b3d2;
   border: none;
 }
@@ -101,7 +92,6 @@ a.site-navigation-current {
 
 .button:active {
   color: #94b9d2;
-  
   background-color: #5496bd;
 }
 
@@ -129,14 +119,12 @@ a.site-navigation-current {
 .search-hotels-button:active,
 .reserve-button:active {
   color: #928a85;
-  
   background-color: #503e33;
 }
 
 .select-button {
   line-height: 21px;
   font-weight: normal;
-  
   background-color: transparent;
   border: 2px solid #ffffff;
 }
@@ -144,7 +132,6 @@ a.site-navigation-current {
 .select-button:hover,
 .select-button:focus {
   color: #000000;
-  
   outline: none;
   background-color: #ffffff;
 }
@@ -162,18 +149,16 @@ a.site-navigation-current {
   list-style: none;
 }
 
-.item-list:first-child,
-.item-list:nth-child(3),
-.item-list:first-child .features-title,
-.item-list:nth-child(3) .features-title {
+.item-list-1,
+.item-list-2,
+.item-list-1 .features-title,
+.item-list-2 .features-title {
   color: #ffffff;
-  
   background-color: #81b3d2;
 }
 
 .features-sub-list {
   color: #333333;
-  
   background-color: #ffffff;
 }
 
@@ -205,7 +190,6 @@ a.site-navigation-current {
 
 .search-form input {
   font: inherit;
-  
   background-color: #f2f2f2;
   border-color: #f2f2f2;
 }
@@ -219,6 +203,10 @@ a.site-navigation-current {
   background-color: transparent;
   border: 2px solid #e5e5e5;
   outline: none;
+}
+
+.search-form label {
+  text-align: left;
 }
 
 .change-value-button {
@@ -253,32 +241,27 @@ a.site-navigation-current {
 
 .sorting-by {
   color: #cacaca;
-  
   border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-by:hover,
 .sorting-by:focus {
   color: #81b3d2;
-  
   border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-by:active {
   color: #000000;
-  
   border: none;
 }
 
 .sorting-by.current {
   color: #81b3d2;
-  
   border: none;
 }
 
 .rating {
   color: #666666;
   text-align: center;
-  
   background-color: #f2f2f2;
 }
