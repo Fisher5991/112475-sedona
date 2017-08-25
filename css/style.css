@@ -149,10 +149,10 @@ a.site-navigation-current {
   list-style: none;
 }
 
-.item-list-1,
-.item-list-2,
-.item-list-1 .features-title,
-.item-list-2 .features-title {
+.real-city,
+.devils-bridge,
+.real-city .features-title,
+.devils-bridge .features-title {
   color: #ffffff;
   background-color: #81b3d2;
 }
