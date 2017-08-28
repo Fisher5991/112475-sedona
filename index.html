@@ -24,48 +24,54 @@
     <main class="container">
       <h1 class="visually-hidden">Седона</h1>
       <section class="features">
-        <h2 class="features-big-title">Седона — небольшой городок в Аризоне, заслуживающей большего!</h2>
-        <p class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="intro">
+          <h2 class="features-big-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
         <ul class="features-list">
           <li class="item-list real-city">
-            <h3 class="features-title">Настоящий городок</h3>
             <img src="img/real-city.jpg" width="800" height="256" alt="Настоящий городок">
-            <span>- №1 -</span>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="container">
+              <h3 class="features-title">Настоящий городок</h3>
+              <span>- №1 -</span>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
           </li>
-          <li class="item-list">
+          <li class="item-list real-city-items">
             <ul class="features-sub-list">
-              <li class="item-sub-list">
+              <li class="item-sub-list housing">
                 <h4>Жилье</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
               </li>
-              <li class="item-sub-list">
+              <li class="item-sub-list food">
                 <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
               </li>
-              <li class="item-sub-list">
+              <li class="item-sub-list souvenirs">
                 <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="item-list devils-bridge">
-            <h3 class="features-title">Там есть<br> мост дьявола</h3>
             <img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-            <span>- №2 -</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="container">
+              <h3 class="features-title">Там есть<br> мост дьявола</h3>
+              <span>- №2 -</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </li>
-          <li class="item-list">
+          <li class="item-list small-area">
             <h3 class="features-title">Небольшая площадь</h3>
             <span>- №3 -</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="item-list">
+          <li class="item-list beautiful-road">
             <h3 class="features-title">Красивая дорога</h3>
             <span>- №4 -</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="item-list">
+          <li class="item-list few-tourists">
             <h3 class="features-title">Мало туристов</h3>
             <span>- №5 -</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -83,32 +89,34 @@
       </section>
     </main>
     <footer class="main-footer">
-      <b class="footer-tag">#visitsedona</b>
-      <div class="footer-social">
-        <ul>
-          <li>
-            <a class="social-button" href="#">
-              <img src="/twitter.svg" width="17" height="15" alt="Twitter">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img src="/fb-icon.svg" width="12" height="22" alt="Facebook">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img src="/youtube.svg" width="20" height="16" alt="Youtube">
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <b class="footer-tag">#visitsedona</b>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a class="social-button" href="#">
+                <img src="/twitter.svg" width="17" height="15" alt="Twitter">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img src="/fb-icon.svg" width="12" height="22" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img src="/youtube.svg" width="20" height="16" alt="Youtube">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+          </a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
-        </a>
-      </p>
     </footer>
     
     <section class="modal modal-search">
