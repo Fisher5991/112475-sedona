@@ -10,12 +10,18 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
   background-repeat: no-repeat;
+  position: relative; /*Можно?*/
 }
 
 .index-page {
-  background-image: url("../img/intro.jpg");
-  background-position: top center;
   text-align: center;
+}
+
+.background-index {
+  background-image: url("../img/intro.jpg");
+  background-position: 0 -56px;
+  background-repeat: no-repeat;
+  min-height: 508px;
 }
 
 .hotels-page {
@@ -43,12 +49,17 @@ a {
 .main-navigation {
   line-height: 26px;
   color: #000000;
+  font-weight: 700;
 }
 
 .site-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.site-navigation li {
+  width: 240px;
 }
 
 .site-navigation a {
@@ -95,7 +106,6 @@ a.site-navigation-current {
   background-color: #5496bd;
 }
 
-.features-big-title,
 .search-hotels-button,
 .search-hotels-button-get,
 .found,
@@ -151,6 +161,12 @@ a.site-navigation-current {
   list-style: none;
 }
 
+.features-big-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
 .features {
   background-color: #eeeeee;
 }
@@ -160,7 +176,6 @@ a.site-navigation-current {
 .real-city .features-title,
 .devils-bridge .features-title {
   color: #ffffff;
-  background-color: #81b3d2;
 }
 
 .features-sub-list {
@@ -236,6 +251,16 @@ a.site-navigation-current {
   border: none;
 }
 
+.select-option input:hover
+.select-option input:focus
+.select-option input:active {
+  color: #ffffff;     /* проверить */
+}
+
+.select-option input:disabled {
+  opacity: 0.5;   /* проверить */
+}
+
 .results {
   background-color: #fefefe;
 }
@@ -276,56 +301,66 @@ a.site-navigation-current {
 }
 
 /* ----- Cеточные стили ----- */
-.index-page .main-header {
-  min-height: 564px;
-  background-color: transparent;
-}
-
-.main-navigation {
-  min-height: 56px;
-  display: flex;
-}
 
 .main-header-logo {
   position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
-  width: 1200px;
-  min-height: 56px;
+  flex-basis: 1200px;
+  padding: 15px 72px;
+  justify-content: space-between;
 }
 
 .site-navigation li {
-  width: 240px;
+  width: 20%;
+}
+
+.info {
+  text-align: left;
+}
+
+.media {
+  text-align: left;
+  margin-right: auto;
+}
+
+.map-state {
+  text-align: right;
+  margin-left: auto;
+}
+
+.hotels {
+  text-align: right;
 }
 
 .intro {
   background-color: #ffffff;
-  height: 217px;
-}
-
-.features {
-  min-height: 1300px;
+  width: 576px;
+  padding-top: 44px;
+  padding-bottom: 45px;
+  padding-left: 312px;
+  padding-right: 313px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  min-height: 1100px;
 }
 
 .features-sub-list {
   display: flex;
 } 
 
-.item-list,
-.item-sub-list {
-  padding-right: 72px;
-  padding-left: 72px;
-  min-height: 330px;
-  width: 256px;
+.item-list {
+  width: 208px;
+  padding-top: 51px;
+  padding-bottom: 61px;
+  padding-right: 95px;
+  padding-left: 97px;
 }
 
 .real-city-items {
@@ -333,31 +368,65 @@ a.site-navigation-current {
   width: 1200px;
 }
 
+.item-sub-list {
+  width: 400px;
+  padding-top: 141px;
+  padding-bottom: 66px;
+  padding-right: 56px;
+  padding-left: 56px;
+}
+
 .real-city,
 .devils-bridge {
   display: flex;
-  min-height: 256px;
   width: 1200px;
   padding: 0;
 }
 
-.devils-bridge img {
+.real-city img {
   order: 1;
 }
 
+.real-city .container,
+.devils-bridge .container {
+  background-color: #81b3d2;
+  padding-right: 49px;
+  padding-left: 49px;
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
 .search-hotels {
-  height: 291px;
+  padding-top: 32px;
+  padding-bottom: 42px;
+}
+
+.search-hotels-button {
+  width: 568px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .map {
   min-height: 473px;
 }
 
+.selections {
+  display: flex;
+  flex-direction: column;
+}
+
 .selections-form {
   display: flex;
-  height: 73px;
-  width: 1138px;
-  padding: 72px 31px;
+  width: 1056px;
+  padding: 31px 72px;
+}
+
+.sorting,
+.selection-results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .infrastructure {
@@ -369,46 +438,90 @@ a.site-navigation-current {
 }
 
 .cost {
-  width: 328px;
+  text-align: right;
+  width: 528px;
   margin-left: auto;
 }
 
-.results {
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-}
-
-.results header {
-  min-height: 86px;
-  width: 1200px;
-}
-
-.results .container {
-  width: 528px;
-}
-
 .result-header {
+  padding-top: 28px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting {
+  display: flex;
+  padding-left: 72px;
+  padding-right: 72px;
+  align-items: center;
+}
+
+.sorting ul {
+  display: flex;
 }
 
 .result-item {
   display: flex;
   min-height: 150px;
-  width: 1200px;
+  width: 1056px;
+  padding-left: 72px;
+  padding-right: 72px;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.selection-results {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-item {
+  display: flex;
+}
+
+.valuation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
 }
 
 .result-item img {
   margin-right: 30px;
 }
 
-.footer {
-  min-height: 120px;
-}
-
 .main-footer .container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 36px;
+}
+
+.footer-social {
+  display: flex;
+}
+/* ----- Декоративные элементы ----- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
