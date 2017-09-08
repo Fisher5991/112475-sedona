@@ -474,11 +474,9 @@ a.site-navigation-current {
 
 .number-feature {
   position: relative;
-  z-index: 2;
 }
 
 .number-feature::before {
-  z-index: 1;
   position: absolute;
   content: '';
   width: 9px;
@@ -490,7 +488,6 @@ a.site-navigation-current {
 }
 
 .number-feature::after {
-  z-index: 1;
   position: absolute;
   content: '';
   width: 9px;
@@ -529,24 +526,46 @@ a.site-navigation-current {
 }
 
 .map {
-  min-height: 473px;
+  position: relative;
+}
+
+.map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
 }
 
 .modal-search {
-  display: none; /*убрать*/
-  position: fixed;
+  z-index: 4;
+  box-shadow: 0 0 7px 5px rgba(0, 1, 1, 0.2);
+  position: absolute;
   color: #000000;
   width: 568px;
   padding: 40px;
   box-sizing: border-box;
   left: 50%;
-  top: 120px;
+  top: 2170px;
   margin-left: -284px;
 }
 
 .search-form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-form p { /*/*/
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-item-date {
@@ -560,10 +579,9 @@ a.site-navigation-current {
 .selections {
   width: 1200px;
   padding-top: 27px;
-  padding-bottom: 27px;
+  padding-bottom: 29px;
   padding-left: 72px;
   padding-right: 72px;
-  min-height: 217px; /* временно */
   box-sizing: border-box;
 }
 
@@ -866,6 +884,12 @@ input[type="checkbox"]:checked + .checkbox-indicator::before {
   background-image: url("../img/star.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.index-page .main-footer {
+  position: relative;
+  z-index: 3;
+  margin-top: -120px;
 }
 
 .main-footer {
