@@ -525,26 +525,13 @@ a.site-navigation-current {
   padding-bottom: 15px;
 }
 
-.map {
-  position: relative;
-}
-
 .map p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
+  position: relative;
   margin: 0;
 }
 
-.map iframe {
-  position: relative;
-  z-index: 2;
-  border: none;
-}
-
 .modal-search {
+  display: none;
   z-index: 4;
   box-shadow: 0 0 7px 5px rgba(0, 1, 1, 0.2);
   position: absolute;
@@ -888,7 +875,6 @@ input[type="checkbox"]:checked + .checkbox-indicator::before {
 
 .index-page .main-footer {
   position: relative;
-  z-index: 3;
   margin-top: -120px;
 }
 
