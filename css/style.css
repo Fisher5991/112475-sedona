@@ -604,6 +604,10 @@ a.site-navigation-current {
   background-color: transparent;
 }
 
+.search-form input::placeholder {
+  color: #000000;
+}
+
 .date-field {
   width: 458px;
 }
