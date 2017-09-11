@@ -95,7 +95,7 @@
         <section class="modal modal-search">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <h2 class="visually-hidden">Поиск отеля</h2>
-            <div class="date-field">
+            <div class="date-field date-field-in">
               <label for="arrival-date">Дата заезда:</label>
               <div class="calendar">
                 <input class="search-item-date" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
@@ -107,7 +107,7 @@
                 </button>
               </div>
             </div>
-            <div class="date-field">
+            <div class="date-field date-field-out">
               <label for="departure-date">Дата выезда:</label>
               <div class="calendar">
                 <input class="search-item-date" type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
@@ -179,15 +179,6 @@
       </p>
     </footer>
     
-    <script>
-      var link = document.querySelector(".search-hotels-button");
-      var popup = document.querySelector(".modal-search");
-      var form = popup.querySelector("form");
-      
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.toggle("modal-search");
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
