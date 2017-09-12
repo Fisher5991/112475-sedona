@@ -551,6 +551,23 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.price-controls input::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.price-controls input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.price-controls input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.price-controls input::placeholder {
+  color: #ffffff;
+}
+
 .date-field {
   width: 458px;
 }
@@ -773,7 +790,7 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 31px;
+  line-height: 32px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -791,11 +808,10 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
 .price-controls input {
   width: 50px;
   margin: 0;
-  font: inherit;
+  font-family: inherit;
   color: inherit;
   background: none;
   border: none;
-  outline: none;
 }
 
 .range-controls {
