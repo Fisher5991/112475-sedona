@@ -12,8 +12,8 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -465,6 +465,8 @@ input[type="radio"].visually-hidden {
   -ms-transform: translate(-50%);
   transform: translate(-50%);
   width: 568px;
+  -webkit-box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 15px 3px rgba(0, 0, 0, 0.1);
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s; /* создать анимацию */
 }
@@ -589,7 +591,7 @@ input[type="radio"].visually-hidden {
 .search-item-date {
   width: 346px;
   padding-right: 43px;
-  padding-left: 12px;
+  padding-left: 10px;
 }
 
 .calendar {
@@ -1236,7 +1238,7 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
 
 .html-academy-link {
   width: 115px;
-  height: 41px; 
+  height: 41px;
 }
 
 .html-academy-link:hover path,
