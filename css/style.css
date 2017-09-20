@@ -27,7 +27,6 @@ img {
 .index-page {
   text-align: center;
 }
-
 .background-index {
   background: #2a3e45;
   background-image: url("../img/intro.jpg");
@@ -222,7 +221,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   color: #333333;
   background-color: #ffffff;
-} 
+}
 
 .item-list {
   width: 400px;
@@ -439,24 +438,106 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 
-.modal-error {
-  -webkit-animation: shake 0.6s;
-  animation: shake 0.6s;
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+  }
+
+ 	50% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+  }
+
+ 	50% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
 }
 
 .modal-search {
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
+  margin-left: -284px;
   z-index: 2;
   width: 568px;
   -webkit-box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 7px 15px 3px rgba(0, 0, 0, 0.1);
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1075,7 +1156,7 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .fact-item div:first-child {
@@ -1246,56 +1327,4 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
 .html-academy-link:active path {
   fill: #000000;
   opacity: 0.3;
-}
-
-/* ----- Анимация ----- */
-
-@-webkit-keyframes shake {
-  0%,
-  100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-  -webkit-transform: translateX(-10px);
-  transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-  -webkit-transform: translateX(10px);
-  transform: translateX(10px);
-  }
-}
-
-@keyframes shake {
-  0%,
-  100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-  -webkit-transform: translateX(-10px);
-  transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-  -webkit-transform: translateX(10px);
-  transform: translateX(10px);
-  }
 }
